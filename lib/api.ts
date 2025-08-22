@@ -1,4 +1,4 @@
-export const API = process.env.NEXT_PUBLIC_API_URL!;
+export const API = process.env.NEXT_PUBLIC_API_BASE!;
 
 export async function api(path: string, init?: RequestInit){
   const res = await fetch(API + path, { ...init, headers: { 'Content-Type': 'application/json', ...(init?.headers||{}) } });

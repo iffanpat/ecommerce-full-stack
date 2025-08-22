@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { API } from '@/lib/api';
+import { API } from '../../lib/api';
 
 export default function Checkout(){
   const [result,setResult] = useState<any>();

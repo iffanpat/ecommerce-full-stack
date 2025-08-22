@@ -1,5 +1,5 @@
-import AddToCartButton from '@/components/AddToCartButton';
-import { API } from '@/lib/api';
+import AddToCartButton from '../../../components/AddToCartButton';
+import { API } from '../../../lib/api';
 export const revalidate = 0;
 async function getData(id:string){ const r = await fetch(`${API}/products/${id}`, { cache:'no-store' }); if(!r.ok) throw new Error('404'); return r.json(); }
 export default async function Page({ params }: { params: { id: string } }){

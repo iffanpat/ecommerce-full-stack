@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { API } from '@/lib/api';
+import { API } from '../../lib/api';
 export const revalidate = 0;
 async function getData(){ const res = await fetch(API + '/products', { cache: 'no-store' }); return res.json(); }
 export default async function Page(){

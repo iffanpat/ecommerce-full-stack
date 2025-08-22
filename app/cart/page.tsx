@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
-import { API } from '@/lib/api';
+import { API } from '../../lib/api';
 
 type Item = { id:number; product_id:number; name:string; price_cents:number; qty:number };
 

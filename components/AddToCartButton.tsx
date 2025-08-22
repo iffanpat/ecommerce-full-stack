@@ -1,5 +1,5 @@
 'use client'
-import { API } from '@/lib/api';
+import { API } from '../lib/api';
 
 export default function AddToCartButton({ productId }: { productId: number }){
   async function add(){

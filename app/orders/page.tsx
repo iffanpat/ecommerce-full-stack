@@ -1,4 +1,4 @@
-import { API } from '@/lib/api';
+import { API } from '../../lib/api';
 export const revalidate = 0;
 async function getData(){ const r = await fetch(API+'/orders', {cache:'no-store'}); return r.json(); }
 export default async function Orders(){
